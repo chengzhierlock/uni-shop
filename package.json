@@ -52,6 +52,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-4070620250821001",
     "@dcloudio/uni-mp-xhs": "3.0.0-4070620250821001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4070620250821001",
+    "@escook/request-miniprogram": "^0.2.1",
     "vue": "^3.4.21",
     "vue-i18n": "^9.1.9",
     "vue-router": "^4.4.0"
@@ -63,6 +64,20 @@
     "@dcloudio/uni-stacktracey": "3.0.0-4070620250821001",
     "@dcloudio/vite-plugin-uni": "3.0.0-4070620250821001",
     "@vue/runtime-core": "^3.4.21",
+    "sass": "^1.93.2",
     "vite": "5.2.8"
-  }
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chengzhierlock/uni-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chengzhierlock/uni-shop/issues"
+  },
+  "homepage": "https://github.com/chengzhierlock/uni-shop#readme"
 }

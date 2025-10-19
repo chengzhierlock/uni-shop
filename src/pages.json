@@ -25,8 +25,24 @@
 			}
 		}
 	],
+	"subPackages": [
+		{
+			"root": "subpkg",
+			"pages": [
+				{
+					"path": "goods_detail/goods_detail",
+					"style": {}
+				},
+				{
+					"path": "goods_list/goods_list",
+					"style": {}
+				}
+			]
+		}
+	],
 	"tabBar": {
-		"selectedColor": "C00000",
+		"selectedColor": "#C00000",
+		"color": "#7A7E83",
 		"list": [
 			{
 				"pagePath": "pages/home/home",

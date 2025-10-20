@@ -1,4 +1,7 @@
 <template>
+  <view class="search-box">
+    <my-search @click="gotoSearch"></my-search>
+  </view>
   <view>
     <swiper :indicator-dots="true" autoplay="true" :interval="3000" :duration="1000" :circular="true">
       <swiper-item v-for="(item, i) in swiperList"  :key="i">
@@ -39,9 +42,12 @@
 </template>
 
 <script lang="ts">
-import { defineAsyncComponent, defineComponent } from 'vue';
+import { defineComponent } from 'vue';
+import mySearch from '../../components/my-search.vue';
 export default defineComponent({
-  components: {},
+  components: {
+    "my-search": mySearch
+  },
   data() {
     return {
       // 轮播图
@@ -96,6 +102,12 @@ export default defineComponent({
           url: '/pages/cate/cate'
         })
       }
+    },
+
+    gotoSearch() {
+      uni.navigateTo({
+        url: '/subpkg/goods_search/goods_search'
+      })
     }
   },
   watch: {},
@@ -158,5 +170,11 @@ export default defineComponent({
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .search-box {
+    position: sticky;
+    top: 0;
+    z-index: 999;
   }
 </style>

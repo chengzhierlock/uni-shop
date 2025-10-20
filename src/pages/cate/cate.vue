@@ -1,4 +1,5 @@
 <template>
+  <mySearch @click="gotoSearch"></mySearch>
   <view class="scroll-view-container">
     <!-- 左侧滑动 -->
     <scroll-view class="left-scroll-view" scroll-y="true" :style="{height: wh + 'px'}">
@@ -23,8 +24,9 @@
 
 <script lang="ts">
 import {defineComponent} from 'vue';
+import mySearch from "@/components/my-search.vue";
 export default defineComponent({
-  components: {},
+  components: { mySearch },
   data() {
     return {
       // wh为windowheight当前设备可用高度
@@ -54,10 +56,16 @@ export default defineComponent({
     },
 
     gotoGoodsList(item3) {
-      console.log(item3);
+      // console.log(item3);
       
       uni.navigateTo({
         url:'/subpkg/goods_list/goods_list?cid=' + item3.cat_id
+      })
+    },
+
+    gotoSearch() {
+      uni.navigateTo({
+        url: '/subpkg/goods_search/goods_search'
       })
     }
   },

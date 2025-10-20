@@ -1,4 +1,11 @@
 {
+		"easycom": {
+			"autoscan": true,
+			"custom": {
+				// 匹配 uni-ui 组件的路径规则，无需手动导入
+				"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+			}
+		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/home/home",
@@ -35,6 +42,10 @@
 				},
 				{
 					"path": "goods_list/goods_list",
+					"style": {}
+				},
+				{
+					"path": "goods_search/goods_search",
 					"style": {}
 				}
 			]

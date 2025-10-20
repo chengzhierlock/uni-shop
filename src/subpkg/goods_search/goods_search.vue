@@ -18,7 +18,7 @@
       <uni-icons @click="cleanHistory()" type="trash" size="17"></uni-icons>
     </view>
     <view class="history-list">
-      <uni-tag @click="gotoList(kw)" :inverted="true" type="error" :text="item" v-for="(item, i) in historys" :key="i"></uni-tag>
+      <uni-tag @click="gotoList(item)" :inverted="true" type="error" :text="item" v-for="(item, i) in historys" :key="i"></uni-tag>
     </view>
    </view>
 </template>
